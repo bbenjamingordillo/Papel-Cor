@@ -141,8 +141,8 @@
   .hero-sub{ font-size:17.5px; color:var(--ink-soft); max-width:46ch; line-height:1.6; }
   .hero-actions{ display:flex; gap:14px; flex-wrap:wrap; margin-top:30px; }
 
-  .hero-art{ position:relative; }
-  .hero-art svg{ width:100%; height:auto; }
+  .hero-art{ position:relative; border-radius:24px; overflow:hidden; box-shadow:var(--shadow); }
+  .hero-art img{ width:100%; height:100%; aspect-ratio:8/7; object-fit:cover; display:block; }
 
   /* ---------- Materials ---------- */
   .section-head{ max-width:640px; margin-bottom:46px; }
@@ -386,35 +386,8 @@
           <a class="btn btn-ghost" href="#contacto">Ver formulario de contacto</a>
         </div>
       </div>
-      <div class="hero-art" aria-hidden="true">
-        <svg viewBox="0 0 480 420" xmlns="http://www.w3.org/2000/svg">
-          <rect x="0" y="0" width="480" height="420" rx="24" fill="var(--bg-soft)"/>
-          <g>
-            <rect x="60" y="230" width="160" height="120" rx="6" fill="var(--bg-elevated)" stroke="var(--border)" stroke-width="1.5"/>
-            <line x1="60" y1="258" x2="220" y2="258" stroke="var(--border)"/>
-            <line x1="60" y1="286" x2="220" y2="286" stroke="var(--border)"/>
-            <line x1="60" y1="314" x2="220" y2="314" stroke="var(--border)"/>
-            <rect x="80" y="205" width="160" height="120" rx="6" fill="var(--bg-elevated)" stroke="var(--border)" stroke-width="1.5"/>
-            <line x1="80" y1="233" x2="240" y2="233" stroke="var(--border)"/>
-            <line x1="80" y1="261" x2="240" y2="261" stroke="var(--border)"/>
-            <line x1="80" y1="289" x2="240" y2="289" stroke="var(--border)"/>
-            <path d="M220 205 L240 205 L240 225 Z" fill="var(--green-tint)"/>
-          </g>
-          <g>
-            <circle cx="360" cy="150" r="34" fill="var(--blue-tint)" stroke="var(--blue)" stroke-width="2"/>
-            <circle cx="360" cy="150" r="20" fill="none" stroke="var(--blue)" stroke-width="1.4"/>
-            <circle cx="392" cy="192" r="24" fill="var(--blue-tint)" stroke="var(--blue)" stroke-width="2"/>
-            <circle cx="392" cy="192" r="13" fill="none" stroke="var(--blue)" stroke-width="1.2"/>
-          </g>
-          <g stroke="var(--green-strong)" stroke-width="2.2" fill="none" stroke-linecap="round">
-            <path d="M300 300 h90"/>
-            <path d="M345 300 v-46"/>
-            <path d="M312 254 h66"/>
-            <path d="M312 254 l-14 30 h28 Z" fill="var(--green-tint)"/>
-            <path d="M378 254 l-14 30 h28 Z" fill="var(--green-tint)"/>
-          </g>
-          <text x="345" y="340" text-anchor="middle" font-family="Manrope, sans-serif" font-size="12" font-weight="700" fill="var(--ink-soft)" letter-spacing=".5">PESAJE EN EL LUGAR</text>
-        </svg>
+      <div class="hero-art">
+        <img src="assets/hero-fardos.jpg" alt="Fardos de papel y cartón prensados listos para reciclar">
       </div>
     </div>
   </section>
